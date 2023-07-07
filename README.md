@@ -8,4 +8,11 @@ SoilGrids_Pred_USCS_15-30cm.xlsx is part of the prediction of the example study 
 USCS_classfiers.py include 4 tree-based models (RF,LCE,XGBOOST,GBDT) for the prediction of USCS soil classification by using the data extracted_gSSURGO_data.xlsx
 evaluation metrics of accuracy, precision, recall, f1-score, kappa, confusion matrix are all included. SHAP interpretation method is also included in this file.
 
+USCS_criterion_classification.py use the linear model to estimate LL and PI for USCS soil classification.
 
+SM_regressors.py include 4 tree-based models (RF,LCE,XGBOOST,GBDT) for the prediction of soil mositure for multiple soil layers by using the data SM_dataset_all_depth_FULLY.xls
+mannual changes of directory, depth, models are required
+
+SM_prediction_large_images.py are separate steps for generating the soil moisture map with high resolution considering the issue of limited CPU memory.
+
+RCI_calculation.py is used to generate the soil strength map on the study site, based on USCS soil classfication map and soil moisture map
