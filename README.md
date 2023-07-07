@@ -13,6 +13,6 @@ USCS_criterion_classification.py use the linear model to estimate LL and PI for 
 SM_regressors.py include 4 tree-based models (RF,LCE,XGBOOST,GBDT) for the prediction of soil mositure for multiple soil layers by using the data SM_dataset_all_depth_FULLY.xls
 mannual changes of directory, depth, models are required
 
-SM_prediction_large_images.py are separate steps for generating the soil moisture map with high resolution considering the issue of limited CPU memory.
+SM_prediction_large_images.py are separate steps for generating the soil moisture map with high resolution considering the issue of limited CPU memory. Due to the large size of digital images, test data is not provided here.
 
-RCI_calculation.py is used to generate the soil strength map on the study site, based on USCS soil classfication map and soil moisture map
+RCI_calculation.py is used to generate the soil strength map on the study site, based on USCS soil classfication map and soil moisture map following the SMSP model.
